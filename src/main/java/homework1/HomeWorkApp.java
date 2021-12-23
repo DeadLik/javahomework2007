@@ -19,9 +19,8 @@ public class HomeWorkApp {
         if (a + b >= 0) {
             System.out.println("Сумма положительная");
         }
-        else {
-            System.out.println("Сумма отрицательная");
-        }
+        else System.out.println("Сумма отрицательная");
+
     }
 
     public static void printColor() {
@@ -43,6 +42,6 @@ public class HomeWorkApp {
         if (a >= b) {
             System.out.println("a >= b");
         }
-        else System.out.println("a <= b");
+        else System.out.println("a < b");
     }
 }
