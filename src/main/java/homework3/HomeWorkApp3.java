@@ -31,6 +31,13 @@ public class HomeWorkApp3 {
 
         int[] arr4 = new int[0];
         minMaxArray(arr4);
+        System.out.println();
+        
+        int[] arron = {2, 2, 2, 1, 2, 2, 10, 1};
+        returnTrueFalse(arron);
+        System.out.println(returnTrueFalse(arron));
+
+        System.out.println();
 
 
 
@@ -115,5 +122,31 @@ public class HomeWorkApp3 {
             }
         }
         System.out.println("\nmax: " + max + "\nmin: " + min);
+    }
+    
+    // ** Написать метод, в который передается не пустой одномерный целочисленный массив, метод должен вернуть true, 
+    //если в массиве есть место, в котором сумма левой и правой части массива равны.
+    //Примеры:
+    //checkBalance([2, 2, 2, 1, 2, 2, ||| 10, 1]) → true, т.е. 2 + 2 + 2 + 1 + 2 + 2 = 10 + 1
+    //checkBalance([1, 1, 1, ||| 2, 1]) → true, т.е. 1 + 1 + 1 = 2 + 1
+    //граница показана символами |||, эти символы в массив не входят и не имеют никакого отношения к ИЛИ.
+
+    public static boolean returnTrueFalse(int[] arron) {
+        int leftSum = 0;
+        int rightSum = 0;
+        for (int i = 0; i < arron.length; i++) {
+            leftSum += arron[i];
+            for (int j = 0; j < arron.length; j++) {
+                if (j > i) {
+                    rightSum += arron[j];
+                } else {
+                    rightSum = 0;
+                }
+            }
+            if (leftSum == rightSum) {
+                return true;
+            }
+        }
+        return false;
     }
 }
