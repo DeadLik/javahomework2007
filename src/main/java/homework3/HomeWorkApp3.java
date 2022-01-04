@@ -18,7 +18,7 @@ public class HomeWorkApp3 {
         System.out.println();
 
         int[][] arr2 = new int[5][5];
-        TwoDimensionalArray(arr2);
+        twoDimensionalArray(arr2);
         System.out.println();
 
         int[] arr3 = returnArray(50, 8);
@@ -30,7 +30,7 @@ public class HomeWorkApp3 {
         System.out.println();
 
         int[] arr4 = new int[0];
-        MinMaxArray(arr4);
+        minMaxArray(arr4);
 
 
 
@@ -74,7 +74,7 @@ public class HomeWorkApp3 {
     // и с помощью цикла(-ов) заполнить его диагональные элементы единицами (можно только одну из диагоналей, если обе сложно).
     // Определить элементы одной из диагоналей можно по следующему принципу: индексы таких элементов равны, то есть [0][0], [1][1], [2][2], …, [n][n];
 
-    public static void TwoDimensionalArray(int[][] arr2) {
+    public static void twoDimensionalArray(int[][] arr2) {
         for (int i = 0; i < arr2.length; i++) {
             for (int j = 0; j < arr2[i].length; j++) {
                 if (i == j || i + j == 4) {
@@ -99,7 +99,7 @@ public class HomeWorkApp3 {
 
     // * Задать одномерный массив и найти в нем минимальный и максимальный элементы ;
 
-    public static void MinMaxArray(int[] arrMxM) {
+    public static void minMaxArray(int[] arrMxM) {
         int[] masi = {39, 25, 17, 87, 32, 44};
 
         int max = masi[0];
