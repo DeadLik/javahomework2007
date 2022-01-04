@@ -24,6 +24,7 @@ public class HomeWorkApp {
         }
     }
 
+
     public static void printColor() {
         int value = 28;
 
