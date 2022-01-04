@@ -2,11 +2,11 @@ package homework2;
 
 public class HomeWorkApp2 {
     public static void main(String[] args) {
-        CheckPositNegBoolValue(5);
-        CheckPositNegValue(5);
-        CheckValue(6, 6);
-        TextAndNumber("Test", 5);
-        CheckYear(2009);
+        checkPositNegBoolValue(5);
+        checkPositNegValue(5);
+        checkValue(6, 6);
+        textAndNumber("Test", 5);
+        checkYear(2009);
 
     }
 
