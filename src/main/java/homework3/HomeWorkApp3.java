@@ -29,7 +29,7 @@ public class HomeWorkApp3 {
 
         System.out.println();
 
-        int[] arr4 = new int[0];
+        int[] arr4 = {39, 25, 17, 87, 32, 44};
         minMaxArray(arr4);
         System.out.println();
         
@@ -107,18 +107,17 @@ public class HomeWorkApp3 {
     // * Задать одномерный массив и найти в нем минимальный и максимальный элементы ;
 
     public static void minMaxArray(int[] arrMxM) {
-        int[] masi = {39, 25, 17, 87, 32, 44};
 
-        int max = masi[0];
-        int min = masi[0];
+        int max = arrMxM[0];
+        int min = arrMxM[0];
 
 
-        for (int i = 0; i < masi.length; i++) {
-            if (masi[i] > max) {
-                max = masi[i];
+        for (int i = 0; i < arrMxM.length; i++) {
+            if (arrMxM[i] > max) {
+                max = arrMxM[i];
             }
-            if (masi[i] < min) {
-                min = masi[i];
+            if (arrMxM[i] < min) {
+                min = arrMxM[i];
             }
         }
         System.out.println("\nmax: " + max + "\nmin: " + min);
