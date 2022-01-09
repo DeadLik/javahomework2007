@@ -98,9 +98,7 @@ public class HomeWorkApp3 {
 
     public static int[] returnArray(int len, int initialValue) {
         int[] res = new int[len];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = initialValue;
-        }
+        Arrays.fill(res, initialValue);
         return res;
     }
 
