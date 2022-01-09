@@ -84,7 +84,7 @@ public class HomeWorkApp3 {
     public static void twoDimensionalArray(int[][] arr2) {
         for (int i = 0; i < arr2.length; i++) {
             for (int j = 0; j < arr2[i].length; j++) {
-                if (i == j || i + j == arr2.length) {
+                if (i == j || i + j == arr2.length -1) {
                     arr2[i][j] = 1;
                 }
                 System.out.print(arr2[i][j] + " ");
