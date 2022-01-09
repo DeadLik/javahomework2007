@@ -5,8 +5,8 @@ import sun.rmi.transport.proxy.RMISocketInfo;
 public class HomeWorkApp3 {
     public static void main(String[] args) {
 
-        int[] Arrays = {1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1};
-        replacement(Arrays);
+        int[] arrays = {1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1};
+        replacement(arrays);
         System.out.println();
 
         int[] arr = new int[100];
@@ -45,14 +45,14 @@ public class HomeWorkApp3 {
 
    // Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
 
-    public static void replacement(int[] Arrays) {
-        for (int i = 0; i < Arrays.length; i++) {
-            if (Arrays[i] == 0) {
-                Arrays[i] = 1;
+    public static void replacement(int[] arrays) {
+        for (int i = 0; i < arrays.length; i++) {
+            if (arrays[i] == 0) {
+                arrays[i] = 1;
             } else {
-                Arrays[i] = 0;
+                arrays[i] = 0;
             }
-            System.out.print(Arrays[i] + " ");
+            System.out.print(arrays[i] + " ");
         }
     }
 
@@ -84,7 +84,7 @@ public class HomeWorkApp3 {
     public static void twoDimensionalArray(int[][] arr2) {
         for (int i = 0; i < arr2.length; i++) {
             for (int j = 0; j < arr2[i].length; j++) {
-                if (i == j || i + j == 4) {
+                if (i == j || i + j == arr2.length) {
                     arr2[i][j] = 1;
                 }
                 System.out.print(arr2[i][j] + " ");
