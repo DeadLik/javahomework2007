@@ -14,7 +14,13 @@ public class Person {
         this.email = email;
         this.phone = phone;
         this.pay = pay;
-        this.age = age;
+        
+        if (age > 0) {
+            this.age = age;
+        } else {
+            System.out.println("Неверно указан возраст у " + name);
+            System.out.println();
+        }
     }
 
     public void info() {
