@@ -18,7 +18,12 @@ public class Person {
     }
 
     public void info() {
-        System.out.println("ФИО: " + name + "\nДолжность: " + position + "\nE-mail: " + email + "\nНомер телефона: " + phone + "\nЗарплата: " + pay + " RUB" + "\nВозраст: " + age);
+        System.out.println("ФИО: " + name + 
+                           "\nДолжность: " + position + 
+                           "\nE-mail: " + email + 
+                           "\nНомер телефона: " + phone + 
+                           "\nЗарплата: " + pay + " RUB" + 
+                           "\nВозраст: " + age);
         System.out.println();
     }
 
